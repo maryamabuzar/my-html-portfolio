@@ -19,6 +19,13 @@
       color: red;
     }
 
+<section id="home">
+  <h1>Maryam Abuzar</h1>
+  <h2>Aspiring Web Developer</h2>
+  <p>I am learning HTML, CSS, and Python to build useful websites.</p>
+  <a href="mailto:your-emailrandhwashaab@gmail.com" class="contact-btn">Contact Me</a>
+</section>
+
     nav a {
       color: white;
       background-color: red;
@@ -32,6 +39,34 @@
     p {
       line-height: 1.6;
     }
+
+.contact-btn {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.contact-btn:hover {
+  background-color: darkred;
+}
+
+.skill-card {
+  background-color: #1a1a1a;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 400px;
+}
+
+.skill-card h3 {
+  color: red;
+}
+
   </style>
 </head>
 
@@ -51,10 +86,27 @@
 <p>I have completed a BA in IT</p>
 <hr>
 
-<h2 id="skills">My Skills</h2>
-<p>MS Word</p>
-<p>MS Excel</p>
+
+<section id="skills">
+  <h2>My Skills</h2>
+
+  <div class="skill-card">
+    <h3>MS Word</h3>
+    <p>Document creation and formatting</p>
+  </div>
+
+  <div class="skill-card">
+    <h3>MS Excel</h3>
+    <p>Basic spreadsheets and data entry</p>
+  </div>
+
+  <div class="skill-card">
+    <h3>HTML & CSS</h3>
+    <p>Learning to create and style websites</p>
+  </div>
+</section>
 <hr>
+
 
 <h2 id="hobbies">My Hobbies</h2>
 <p>Learning new skills</p>
