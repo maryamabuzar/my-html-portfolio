@@ -1,143 +1,177 @@
-
+<!DOCTYPE html>
 <head>
-  <title>Maryam Abuzar | Web Developer</title>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-
-    h1 {
-      color: red;
-      font-size: 40px;
-    }
-
-    h2 {
-      color: red;
-    }
-
-<section id="home">
-  <h1>Maryam Abuzar</h1>
-  <h2>Aspiring Web Developer</h2>
-  <p>I am learning HTML, CSS, and Python to build useful websites.</p>
-  <a href="mailto:your-emailrandhwashaab@gmail.com" class="contact-btn">Contact Me</a>
-</section>
-
-    nav a {
-      color: white;
-      background-color: red;
-      padding: 10px;
-      margin: 5px;
-      text-decoration: none;
-      display: inline-block;
-      border-radius: 5px;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-.contact-btn {
-  display: inline-block;
-  background-color: red;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 8px;
-  margin-top: 10px;
+<title>Maryam Abuzar | portfolio </title>
+<style>
+body{
+background-color: Black;
+ color: pink;
+text-align: center;
+font-family: Arial, sans-serif;
 }
-
-.contact-btn:hover {
-  background-color: darkred;
+h1{
+color: green;
+font-size: 45px;
 }
-
-.skill-card {
-  background-color: #1a1a1a;
-  border: 1px solid red;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 15px auto;
-  max-width: 400px;
+p{
+font-size: 20px;
 }
-
-.skill-card h3 {
-  color: red;
+nav {
+background-color: black;
+padding: 15px;
+}
+nav a {
+color: pink;
+text-decoration: none;
+margin: 15px;
+font-size: 18px;
+}
+nav a:hover {
+background-color: black;
+color: white;
+}
+h2{
+color: red;
+font-size: 28px;
+}
+section {
+padding: 25px;
+margin: 20px;
 }
 
 .project-card {
-  background-color: #1a1a1a;
-  border: 1px solid red;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 15px auto;
-  max-width: 500px;
+background-color: black;
+color: white;
+padding: 20px;
+margin: 15px auto;
+max-width: 500px;
+border: 2px solid red;
+border-radius: 10px;
 }
 
 .project-card h3 {
-  color: red;
+ color: pink;
 }
-
-  </style>
+.contact-btn {
+display: inline-block;
+background-color: red;
+color: white;
+padding: 12px 25px;
+text-decoration: none;
+border-radius: 8px;
+font-size: 18px;
+}
+.contact-btn:hover {
+background-color: darkred;
+}
+/* Mobile-friendly design */
+* {
+box-sizing: border-box;
+}
+nav a {
+display: inline-block;
+margin: 8px;
+}
+section {
+max-width: 100%;
+}
+@media (max-width: 600px) {
+nav a {
+display: block;
+margin: 12px 0;
+}
+h1 {
+font-size: 32px;
+}
+h2 {
+font-size: 24px;
+}
+section {
+padding: 15px;
+margin: 10px;
+}
+.project-card {
+width: 100%;
+ }
+}
+.star {
+position: fixed;
+top: -10px;
+color: white;
+font-size: 12px;
+animation: fallingStars 8s linear infinite;
+pointer-events: none;
+z-index: 1;
+}
+nav, section {
+position: relative;
+z-index: 2;
+}
+@keyframes fallingStars {
+from {
+transform: translateY(-10px);
+}
+to {
+transform: translateY(110vh);
+ }
+</style>
 </head>
-
-<h1>Maryam</h1>
-
+<body>
 <nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#skills">Skills</a>
-  <a href="#hobbies">Hobbies</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </nav>
-
-<h2 id="about">About Me</h2>
-<p>My name is Maryam Abuzar. I want to do something different to improve myself. I love computers, and I enjoy learning new things about them. That is why I chose web development.</p>
-
-<h2 id="education">Education</h2>
-<p>I have completed a BA in IT</p>
-<hr>
-
-
+<section id="home">
+<h1>Maryam Abuzar</h1>
+<h2>Future Web Developer</h2>
+<p>Welcome to my personal potfolio</p>
+<p>I am  learning Web Development.</p>
+</section>
+<section id="about">
+<h2>About Me</h2>
+<p>I have completed my BA in IT.</p>
+<p>I love computers and learning new skills.</p>
+</section>
 <section id="skills">
-  <h2>My Skills</h2>
-
-  <div class="skill-card">
-    <h3>MS Word</h3>
-    <p>Document creation and formatting</p>
-  </div>
-
-  <div class="skill-card">
-    <h3>MS Excel</h3>
-    <p>Basic spreadsheets and data entry</p>
-  </div>
-
-  <div class="skill-card">
-    <h3>HTML & CSS</h3>
-    <p>Learning to create and style websites</p>
-  </div>
+<h2>My Skills</h2>
+<p>HTML - Beginner</p>
+<p>CSS - Beginner</p>
+<p>MS Word</p>
+<p>MS Excel</p>
+<p>Python Beginner</p>
 </section>
-<hr>
-
 <section id="projects">
-  <h2>My Projects</h2>
-
-  <div class="project-card">
-    <h3>My Personal Portfolio</h3>
-    <p>A personal website created while learning HTML and CSS.</p>
-    <p>Skills used: HTML, CSS</p>
-  </div>
-
-  <div class="project-card">
-    <h3>Python Calculator</h3>
-    <p>A beginner Python project for performing basic calculations.</p>
-    <p>Skills used: Python</p>
-  </div>
+<h2>My Projects</h2>
+<div class="project-card">
+<h3>My Portfolio Website</h3>
+<p>I created this website using HTML and CSS.</p>
+</div>
+<div class="project-card">
+<h3>Tip & Split Calculator</h3>
+<p>I created a Python project to calculate tips and split bills.</p>
+</div>
 </section>
-<hr>
+<section id="contact">
+<h2>Contact Me</h2>
+<p>If you want to contact me, send me an email.</p>
+<a class="contact-btn" href="mailto:randhwashaab@gmail.com">
+        Email Me
+</a>
+</section>
+<script>
+for (let i = 0; i < 30; i++) {
+let star = document.createElement("div");
+star.className = "star";
+star.innerHTML = "✦";
+star.style.left = Math.random() * 100 + "vw";
+star.style.animationDelay = Math.random() * 8 + "s";
+document.body.appendChild(star);
+}
+</script>
+</body>
+</html>
 
 
-<h2 id="hobbies">My Hobbies</h2>
-<p>Learning new skills</p>
-<p>Using Computer</p>
+
